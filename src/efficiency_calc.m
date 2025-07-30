@@ -1,8 +1,8 @@
 clear;
 close all;
 
-load('../data/Jcrit/BEM.mat')
-load('../data/eff/flight.mat')
+load('./data/Jcrit/BEM.mat')
+load('./data/eff/flight.mat')
 
 % fit cubic in BEM data and predict Cp_hat_bem
 X_Cp_bem = [J_bem J_bem.^2 J_bem.^3];
@@ -59,3 +59,7 @@ h = legend('BEM $C_P$', ...
 set(h, 'Interpreter', 'latex', 'FontSize', 14);
 legend boxoff;
 box on;
+
+%% print plot
+savefig('./figs/Cp-J_eta.fig')
+saveas(gcf, './pdf/Cp-J_eta.pdf')
