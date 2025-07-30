@@ -2,7 +2,7 @@ clear;
 close all;
 
 %% user input
-load('../data/input/training.mat')
+load('./data/input/training.mat')
 Jcrit = 0.20; 
 
 D = 8*0.0254;
@@ -92,13 +92,13 @@ set(h, 'FontSize', 11);
 legend boxoff
 
 %% save models
-% save('../models/flight_AS.mat', 'names_Va', 'coeff_Va');
-% save('../models/flight_AS_j.mat', 'names_J', 'coeff_J', 'intercept_J');
+% save('./models/flight_AS.mat', 'names_Va', 'coeff_Va');
+% save('./models/flight_AS_j.mat', 'names_J', 'coeff_J', 'intercept_J');
 
 %% save data for Jcrit calculation
 % J_flight = J; Cp_flight = Cp;
-% save('../data/Jcrit/flight.mat', 'J_flight', 'Cp_flight');
+% save('./data/Jcrit/flight.mat', 'J_flight', 'Cp_flight');
 
 %% save data for efficiency calculation
 % J_flight = J; Cp_flight = Cp_input;
-% save('../data/eff/flight.mat', 'J_flight', 'Cp_flight');
+% save('./data/eff/flight.mat', 'J_flight', 'Cp_flight');
