@@ -2,29 +2,29 @@ clear;
 close all;
 
 %% user input
-load('../data/input/test.mat')
+load('./data/input/test.mat')
 
-load('../models/BEM.mat')
+load('./models/BEM.mat')
 coeff_Va_BEM = coeff_Va;
-load('../models/WT.mat')
+load('./models/WT.mat')
 coeff_Va_WT = coeff_Va;
-load('../models/flight_AS.mat')
+load('./models/flight_AS.mat')
 coeff_Va_AS = coeff_Va;
-load('../models/flight_GPS.mat')
+load('./models/flight_GPS.mat')
 coeff_Va_GPS = coeff_Va;
 
 intercept_Va = 0;
 
-load('../models/BEM_j.mat')
+load('./models/BEM_j.mat')
 coeff_J_BEM = coeff_J;
 intercept_J_BEM = intercept_J;
-load('../models/WT_j.mat')
+load('./models/WT_j.mat')
 coeff_J_WT = coeff_J;
 intercept_J_WT = intercept_J;
-load('../models/flight_AS_j.mat')
+load('./models/flight_AS_j.mat')
 coeff_J_AS = coeff_J;
 intercept_J_AS = intercept_J;
-load('../models/flight_GPS_j.mat')
+load('./models/flight_GPS_j.mat')
 coeff_J_GPS = coeff_J;
 intercept_J_GPS = intercept_J;
 
@@ -133,6 +133,10 @@ legend boxoff;
 box on;
 axis padded;
 
+%% print plot
+savefig('./figs/flight_Va_predict.fig')
+saveas(gcf, './pdf/flight_Va_predict.pdf')
+
 % AoA and J
 figure('Name', 'Angle of Attack and Advance Ratio', 'Position', [900, 400, 600, 400]);
 
@@ -159,3 +163,7 @@ set(h, 'Interpreter', 'latex', 'FontSize', 14);
 legend boxoff;
 box on;
 axis padded;
+
+%% print plot
+savefig('./figs/flight_alpha_J.fig')
+saveas(gcf, './pdf/flight_alpha_J.pdf')
