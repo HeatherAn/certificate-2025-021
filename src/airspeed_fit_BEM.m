@@ -2,7 +2,7 @@ clear;
 close all;
 
 %% user input
-load('../data/input/BEM.mat')
+load('./data/input/BEM.mat')
 Jcrit = 0.20;
 
 D = 8*0.0254;
@@ -99,9 +99,13 @@ legend boxoff;
 box on;
 
 %% save the models
-% save('../models/BEM.mat', 'names_Va', 'coeff_Va');
-% save('../models/BEM_j.mat', 'names_J', 'coeff_J', 'intercept_J');
+% save('./models/BEM.mat', 'names_Va', 'coeff_Va');
+% save('./models/BEM_j.mat', 'names_J', 'coeff_J', 'intercept_J');
 
 %% save data for Jcrit calculation
 % J_bem = J; Cp_bem = Cp;
-% save('../data/Jcrit/BEM.mat', 'J_bem', 'Cp_bem');
+% save('./data/Jcrit/BEM.mat', 'J_bem', 'Cp_bem');
+
+%% print plot
+savefig('./figs/bem_Va-P-wconst_fit.fig')
+saveas(gcf, './pdf/bem_Va-P-wconst_fit.pdf')
