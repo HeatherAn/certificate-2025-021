@@ -2,7 +2,7 @@ clear;
 close all;
 
 %% user input
-load('../data/input/training.mat')
+load('./data/input/training.mat')
 alpha_crit = 25*pi/180;
 
 D = 8*0.0254;
@@ -135,5 +135,6 @@ set(h, 'FontSize', 11)
 
 %% save models
 % names_Va = {'w', 'p^2*w^-5'};
-% save('../models/flight_GPS.mat', 'names_Va', 'coeff_Va');
-% save('../models/flight_GPS_j.mat', 'names_J', 'coeff_J', 'intercept_J');
+% save('./models/flight_GPS.mat', 'names_Va', 'coeff_Va');
+% save('./models/flight_GPS_j.mat', 'names_J', 'coeff_J', 'intercept_J');
+
