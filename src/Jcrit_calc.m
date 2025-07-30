@@ -1,9 +1,9 @@
 clear;
 close all;
 
-load('../data/Jcrit/BEM.mat')
-load('../data/Jcrit/wt.mat')
-load('../data/Jcrit/flight.mat')
+load('./data/Jcrit/BEM.mat')
+load('./data/Jcrit/wt.mat')
+load('./data/Jcrit/flight.mat')
 
 % fit cubic in BEM data and predict Cp_hat_bem
 X_Cp_bem = [J_bem J_bem.^2 J_bem.^3];
@@ -43,3 +43,7 @@ h = legend('BEM', 'Wind tunnel', 'Flight test', 'Fitted', jcrit_str);
 set(h, 'Interpreter', 'latex', 'FontSize', 14);
 legend boxoff;
 box on;
+
+% print plot to files
+savefig('./figs/Cp-J.fig')
+saveas(gcf, './pdf/Cp-J.pdf')
