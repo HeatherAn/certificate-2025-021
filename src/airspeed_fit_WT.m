@@ -2,7 +2,7 @@ clear;
 close all;
 
 %% user input
-load('../data/input/wt.mat')
+load('./data/input/wt.mat')
 Jcrit = 0.20;
 
 D = 8*0.0254;
@@ -96,6 +96,9 @@ legend boxoff;
 box on;
 axis padded;
 
+%% print plot
+savefig('./figs/wt_Va_fit.fig')
+saveas(gcf, './pdf/wt_Va_fit.pdf')
 
 % PRM
 figure('Name','Airspeed fit using Airspeed data', ...
@@ -119,9 +122,13 @@ box on;
 axis padded;
 
 %% save models
-% save('../models/WT.mat', 'names_Va', 'coeff_Va');
-% save('../models/WT_j.mat', 'names_J', 'coeff_J', 'intercept_J');
+% save('./models/WT.mat', 'names_Va', 'coeff_Va');
+% save('./models/WT_j.mat', 'names_J', 'coeff_J', 'intercept_J');
 
 %% save data for Jcrit calculation
 % J_wt = J(datarange) ; Cp_wt = Cp(datarange);
-% save('../data/Jcrit/wt.mat', 'J_wt', 'Cp_wt');
+% save('./data/Jcrit/wt.mat', 'J_wt', 'Cp_wt');
+
+%% print plot
+savefig('./figs/wt_rpm.fig')
+saveas(gcf, './pdf/wt_rpm.pdf')
