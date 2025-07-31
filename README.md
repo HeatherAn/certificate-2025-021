@@ -13,7 +13,7 @@ This repository is a clone of the author's Github repository associated with the
 
 ## Summary
 
-Figures 1 and 3 are exemplifying pictures of the unmanned aerial vehicle (UAV) used and the wind tunnel experiment setup. Those figures can be found in the `./photos/` directory of the code repository. All other 5 figures of the publication can be reproduced using the MATLAB scripts found in the `./src/` directory. These scripts also generate the `.mat` files found in `./models/`. Only the positioning of the legend is slightly different for some of the figures which can occur due to different DPI settings of the systems and the MATLAB version with which the figures were rendered. Playing with the legend positioning allows to reproduce their positioning in the original  figures. 
+Figures 1 and 3 are exemplifying pictures of the unmanned aerial vehicle (UAV) used and the wind tunnel experiment setup. Those figures can be found in the `./photos/` directory of the code repository. All other 5 figures of the publication can be reproduced using the MATLAB scripts found in the `./src/` directory. These scripts also generate the `.mat` files found in `./models/`.   
 
 ## Preparation steps
 
