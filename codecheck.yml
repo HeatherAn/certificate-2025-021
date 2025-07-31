@@ -32,7 +32,7 @@ codechecker:
     ORCID: 0000-0002-6637-2830
 
 summary: >
-  Full reproduction of the figures shown in the manuscript. Figures 1 and 3 from the manuscript are pictures which are also 
+  Full reproduction of the figures shown in the manuscript. Figures 1 and 3 of the manuscript are pictures which are also 
   provided in the `./photos/` directory of the code repository. All other figures are plots that are fully reproduced by the 
   scripts found in the `./src/` directory of the code repository. The figures are displayed in MATLAB itself and are provided 
   as pdf’s in the `./pdf/` directory of the code repository. 
