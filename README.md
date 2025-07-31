@@ -23,7 +23,7 @@ No extra MATLAB modules are required (other than the ones installed by default).
 
 It is important to mention the scripts use Blade Element Momentum (BEM) simulation data. The authors provide the data they used in the code repository itself (this is what was used for the CODECHECK as well). It does give others the opportunity to use different BEM data for which the use of the BEM tool [CCBlade](https://github.com/WISDEM/CCBlade) is recommended. 
 
-See more information in the (README)[https://github.com/tudelft/propeller_airspeed_sensor/blob/main/README.md] of the code repository. 
+See more information in the [README](https://github.com/tudelft/propeller_airspeed_sensor/blob/main/README.md) of the code repository. 
 
 ## Reproducing Results
 
@@ -36,7 +36,7 @@ For reproducibility purposes, the codechecker deleted the provided figures and a
 
 ### Default outputs
 
-When running the scripts with the default values, the scripts generate output to the MATLAB command window. This output is now provided in the (README)[https://github.com/tudelft/propeller_airspeed_sensor/blob/main/README.md] of the code repository.
+When running the scripts with the default values, the scripts generate output to the MATLAB command window. This output is now provided in the [README](https://github.com/tudelft/propeller_airspeed_sensor/blob/main/README.md) of the code repository.
 
 The printed figures can be found in the `./pdf/` directory of this repository. As mentioned above, the codechecker added the printing instructions to the scripts (see commit history of this repository). This results in a different positioning of the legend in some of the figures, compared to the figures presented in the related publication. However this can be easily adjusted, and it is only the positioning of the legend, not the content of it nor the content nor labels of the plot itself. As mentioned above the figures were also reproduced by the codechecker in MATLAB R2025a in Windows 11, for which the default DPI settings also move the legend's position in some of the figures. 
 
