@@ -9,7 +9,7 @@ The code to reproduce the figures in the publication and reuse its results is av
 - Github Repository: [https://github.com/tudelft/propeller_airspeed_sensor/](https://github.com/tudelft/propeller_airspeed_sensor/)  
 - 4TU.ResearchData Repository: [https://doi.org/10.4121/8bcecbac-5478-4595-b629-4378feac6dcb](https://doi.org/10.4121/8bcecbac-5478-4595-b629-4378feac6dcb) - *DOI will become active once the article is published*  
 
-This repository is a clone of the author's Github repository associated with the publication.
+This repository is a clone of the author's Github repository associated with the publication. The CODECHECK report is publishg in Zenodo ([https://doi.org/10.5281/zenodo.16616998](https://doi.org/10.5281/zenodo.16616998)).
 
 ## Summary
 
